@@ -3,7 +3,7 @@ name: Build and Deploy LaTeX Document
 on:
   push:
     branches:
-      - main
+      - main  # Trigger the workflow on push to the main branch
 
 jobs:
   build:
@@ -18,9 +18,9 @@ jobs:
       with:
         root_file: main.tex
     
-    - name: Copy index.html to the build directory
+    - name: Create index.html file
       run: |
-        <!DOCTYPE html>
+        echo '<!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
@@ -46,12 +46,11 @@ jobs:
         <body>
             <embed src="main.pdf" type="application/pdf">
         </body>
-        </html>
-
+        </html>' > index.html
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Deploy everything in the root directory
-        publish_branch: gh-pages
+        publish_dir: ./  # This should be where the main.pdf and index.html are located after compilation
+        publish_branch: gh-pages  # Deploy to the gh-pages branch
