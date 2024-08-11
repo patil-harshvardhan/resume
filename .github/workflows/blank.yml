@@ -3,7 +3,7 @@ name: Build and Deploy LaTeX Document
 on:
   push:
     branches:
-      - main  # Change this to the branch you want to trigger the action on
+      - main  # Trigger the workflow on push to the main branch
 
 jobs:
   build:
@@ -22,5 +22,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Change this if your PDF is generated in a different directory
-        publish_branch: gh-pages  # This will create a gh-pages branch and deploy your document there
+        publish_dir: ./  # Adjust this if your PDF is in a subdirectory
+        publish_branch: main  # Deploy directly from the main branch
+        keep_files: true  # Keeps the files in the main branch
