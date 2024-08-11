@@ -3,7 +3,7 @@ name: Build and Deploy LaTeX Document
 on:
   push:
     branches:
-      - main  # Trigger the workflow on push to the main branch
+      - main  # Change this if you're using a different branch for LaTeX source
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
-      
+    
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
       with:
@@ -22,6 +22,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Adjust this if your PDF is in a subdirectory
-        publish_branch: main  # Deploy directly from the main branch
-        keep_files: true  # Keeps the files in the main branch
+        publish_dir: ./  # This should be where the main.pdf is located after compilation
+        publish_branch: gh-pages  # Deploy to the gh-pages branch
