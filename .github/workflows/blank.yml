@@ -36,7 +36,7 @@ jobs:
                     align-items: center;
                     overflow: hidden;
                 }
-                embed {
+                object {
                     width: 100%;
                     height: 100%;
                     max-width: 100%;
@@ -46,7 +46,9 @@ jobs:
             </style>
         </head>
         <body>
-            <embed src="main.pdf" type="application/pdf" />
+            <object data="main.pdf" type="application/pdf">
+                <p>Your browser does not support PDFs. <a href="main.pdf">Download the PDF</a>.</p>
+            </object>
         </body>
         </html>' > index.html
     
@@ -55,4 +57,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./  
-        publish_branch: gh-pages  
+        publish_branch: gh-pages
