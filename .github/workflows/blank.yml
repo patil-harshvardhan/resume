@@ -28,29 +28,23 @@ jobs:
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Resume</title>
             <style>
-                html, body {
-                    height: 100%;
+                body, html {
                     margin: 0;
                     padding: 0;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #f0f0f0;
                 }
-                #pdf-container {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                #pdf-viewer {
                     width: 100%;
                     height: 100%;
-                    overflow: hidden;
-                }
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border: none;
+                    max-width: 100%;
+                    overflow: auto;
                 }
                 #download-button {
-                    position: absolute;
+                    position: fixed;
                     top: 10px;
                     right: 10px;
                     background-color: #007bff;
@@ -67,14 +61,43 @@ jobs:
                     background-color: #0056b3;
                 }
             </style>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
         </head>
         <body>
-            <div id="pdf-container">
-                <iframe src="main.pdf#toolbar=0" type="application/pdf"></iframe>
-            </div>
             <a id="download-button" href="main.pdf" download="Resume.pdf">Download PDF</a>
+            <div id="pdf-viewer"></div>
+            <script>
+                var url = 'main.pdf';
+                var pdfjsLib = window['pdfjs-dist/build/pdf'];
+                pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+    
+                var loadingTask = pdfjsLib.getDocument(url);
+                loadingTask.promise.then(function(pdf) {
+                    var viewer = document.getElementById('pdf-viewer');
+                    for (var i = 1; i <= pdf.numPages; i++) {
+                        pdf.getPage(i).then(function(page) {
+                            var scale = 1.5;
+                            var viewport = page.getViewport({scale: scale});
+    
+                            var canvas = document.createElement('canvas');
+                            var context = canvas.getContext('2d');
+                            canvas.height = viewport.height;
+                            canvas.width = viewport.width;
+    
+                            var renderContext = {
+                                canvasContext: context,
+                                viewport: viewport
+                            };
+                            page.render(renderContext).promise.then(function() {
+                                viewer.appendChild(canvas);
+                            });
+                        });
+                    }
+                });
+            </script>
         </body>
         </html>' > index.html
+        
       
         
     
