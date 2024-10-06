@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.10)  24 AUG 2024 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.10)  4 OCT 2024 13:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,11 +645,6 @@ Package hyperref Info: Link coloring ON on input line 28.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd) (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd) (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
@@ -664,13 +659,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
 [2] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DDB8C7D7F64E0A1685E5E03F5C42BDF5;778.
+(rerunfilecheck)             Checksum: 4CC96A0C7C69FDFFB7A0A123688BB32F;682.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -678,13 +678,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  20403 strings out of 474116
  371020 string characters out of 5743682
- 1946187 words of memory out of 5000000
+ 1948187 words of memory out of 5000000
  42551 multiletter control sequences out of 15000+600000
  563632 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,9n,81p,1244b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (2 pages, 158489 bytes).
+Output written on main.pdf (2 pages, 158426 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
