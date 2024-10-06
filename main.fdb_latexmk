@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1724510517.85954 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1728045683.6318 0
   "citations.bib" 0 -1 0 ""
   "main.bcf" 0 -1 0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1724510516.9405 "/Users/harshvardhanpatil/Documents/Projects/resume/main.tex" "main.pdf" "main" 1724510517.85985 0
-  "/Users/harshvardhanpatil/Documents/Projects/resume/main.tex" 1724510516.74908 7800 51f1c03a51d039e39b5f635f21488814 ""
+["pdflatex"] 1728045682.74827 "/Users/harshvardhanpatil/Documents/Projects/resume/main.tex" "main.pdf" "main" 1728045683.63205 0
+  "/Users/harshvardhanpatil/Documents/Projects/resume/main.tex" 1728045682.43094 8417 1c3ed312f2870717b61d0def49c521cb ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -120,11 +120,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1723312921.27605 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1723312884 8221423 118120e2f86b499e4ebf1d226c897db0 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1724510517.70363 1020 2f02c673ff50980d86fee41db5080c84 "pdflatex"
+  "main.aux" 1728045683.47874 1002 101312f49fd74a8463ea69be1d791abf "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1724510517.70403 778 ddb8c7d7f64e0a1685e5e03f5c42bdf5 "pdflatex"
-  "main.run.xml" 1724510517.70529 2310 1b0b869126e5ba8cd7cdf7692ccdf732 "pdflatex"
-  "main.tex" 1724510516.74908 7800 51f1c03a51d039e39b5f635f21488814 ""
+  "main.out" 1728045683.47926 682 4cc96a0c7c69fdffb7a0a123688bb32f "pdflatex"
+  "main.run.xml" 1728045683.48057 2310 1b0b869126e5ba8cd7cdf7692ccdf732 "pdflatex"
+  "main.tex" 1728045682.43094 8417 1c3ed312f2870717b61d0def49c521cb ""
   (generated)
   "main.aux"
   "main.bcf"
